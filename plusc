@@ -1,6 +1,7 @@
 #!/usr/bin/python3
-import sys
+# SPDX-FileCopyrightText: 2024 Ryuichi Ueda
 
+import sys
 
 nums = [float(e) for e in sys.argv[1:]]
 
