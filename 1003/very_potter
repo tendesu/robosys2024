@@ -1,0 +1,8 @@
+#!/usr/bin/python3
+
+voldemort = ["akuxio", "abadakedabra", "aqamenty", "vinga-dexiamurebiosaxaa", "expect_patronam", "stupefy","lumos", "reparo", "oculus reparo", "expelliarmus", "protego", "imperio", "crucio"]
+
+for vol in voldemort[1::2]:
+    print(vol + "aaaaaaa")
+
+

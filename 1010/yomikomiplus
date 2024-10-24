@@ -1,0 +1,14 @@
+#!/usr/bin/python3
+import sys
+
+ans,nums=0.0,0.0
+
+
+for line in sys.stdin:
+    nums=line.strip()
+    ans+=float(nums)
+
+
+print(ans)
+
+

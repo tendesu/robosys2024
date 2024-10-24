@@ -1,0 +1,20 @@
+#!/usr/bin/python3
+import sys
+
+
+minus,plus,zero=0,0,0
+
+for n in sys.argv[1:]:
+    x=float(n)
+    if x < 0.0:
+        minus +=1
+    elif x > 0.0:
+        plus +=1
+    else:
+        zero +=1
+
+
+print("plus= " ,plus)
+print("zero= " ,zero)
+print("minus= " ,minus)
+
