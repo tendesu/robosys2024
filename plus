@@ -4,8 +4,11 @@
 
 import sys
 
-nums = [float(e) for e in sys.argv[1:]]
+ans = 0
+for line in sys.stdin:
+    try:
+        ans += int(line)
+    except:
+        ans += float(line)
 
-print(sum(nums))
-
-
+print(ans)
