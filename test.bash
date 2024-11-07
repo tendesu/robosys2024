@@ -23,4 +23,6 @@ out=$(echo | ./plus)
 [ "${out}" = "" ] || ng "$LINENO"
 
 [ "$res" = 0 ] && echo OK
+
+res=9999
 exit $res
