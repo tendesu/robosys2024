@@ -24,5 +24,5 @@ out=$(echo | ./plus)
 
 [ "$res" = 0 ] && echo OK
 
-res=9999
+
 exit $res
