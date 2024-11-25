@@ -1,0 +1,63 @@
+#!/usr/bin/python3
+# SPDX-FileCopyrightText: 2024 tentoshinz
+# SPDX-License-Identifier: BSD-3-Clause
+
+debug=False
+
+import sys
+
+ans1 = 0
+ans2 = 1
+
+for line in sys.stdin:      #標準入力からの読み込み
+    if line== "\n": 
+        break
+    if line== "debug\n":
+        debug= True
+        break
+    try:
+        ans1 += int(line)
+        ans2 *= int(line)
+    except:
+        ans1 += float(line)
+        ans2 *= float(line)
+    ans2 += 1
+
+
+if debug:#################
+    print(round(ans1,5))
+    print(round(ans2,5))
+
+
+try:                                        #ファイルからの読み込み
+    with open('spell.txt', 'r') as f:
+        spell_list = f.read().split("\n")
+    
+    spell_list_num= len(spell_list)
+
+    harry_spell= spell_list[int(ans1 % spell_list_num)]
+    volde_spell= spell_list[int(ans2 % spell_list_num)]
+    
+    result= ("ハリー・ポッター: "+ harry_spell + "っっっっ\n"
+             "ヴォルデモート: "+ volde_spell + "ああああああ\n"
+             "うぉおおおおおおおおお\n"
+             "\n"
+             "ハリー " + ("勝利" if ans1%2 == 0 else "敗北"))
+    
+    if debug:#################
+        print(int(ans1 % spell_list_num))
+        print(int(ans2 % spell_list_num))
+
+
+except FileNotFoundError:                           #読み込み失敗
+    result= ("ハリー・ポッター: ま、魔法が使えないっっっ!?\n"
+             "ヴォルデモート: なんだと?  spell.txtが無い..だと....!?\n"
+             "フェアリーゴッドマザー: ビビディ・バビディ・ブー\n"
+             "\n"
+             "すると、魔法の杖がピカッと光り、きれいなドレスとカボチャの馬車が出てきました。\n"
+             "こうして、ハリーとヴォルデモートは結婚し、幸せに過ごしました。\n"
+             "めでたしめでたし  (FileNotFoundError)")
+
+
+
+print(result)

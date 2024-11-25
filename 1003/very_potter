@@ -1,8 +1,13 @@
 #!/usr/bin/python3
 
-voldemort = ["akuxio", "abadakedabra", "aqamenty", "vinga-dexiamurebiosaxaa", "expect_patronam", "stupefy","lumos", "reparo", "oculus reparo", "expelliarmus", "protego", "imperio", "crucio"]
+with open('spell.txt', 'r') as f:
+    spell_list = f.read().split("\n")
+    print(spell_list)
 
-for vol in voldemort[1::2]:
-    print(vol + "aaaaaaa")
+num=11%3
+
+print("aaaaaaa")
+vol = spell_list[num]
+print(vol + "aaaaaaa")
 
 
