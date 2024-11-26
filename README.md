@@ -1,6 +1,7 @@
 # Potter_Simulator
-ハリーとヴォルデモートが戦うプログラム
 ![test](https://github.com/tentoshinz/robosys2024/actions/workflows/test.yml/badge.svg)
+
+ハリーとヴォルデモートが戦うプログラム
 
 ## 概要
 - このプロジェクトは入力された数字から導き出された結果をもとに、ハリーとヴォルデモートを戦わせることができるプログラムです
