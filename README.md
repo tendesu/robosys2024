@@ -1,4 +1,4 @@
-# Potter_Simulator
+# Potter Simulator
 ![test](https://github.com/tentoshinz/robosys2024/actions/workflows/test.yml/badge.svg)
 
 ハリーとヴォルデモートが戦うプログラム
@@ -8,8 +8,8 @@
 - じゃんけんに飽きた時、呪文を覚えたい時などに使用してください
 - 使った呪文、勝敗の確認、好きな魔法の追加編集を行うことが出来ます
 
-## インストール方法
-以下の手順でプロジェクトをローカル環境にインストールしてください。
+## ダウンロード
+以下の手順でプロジェクトをローカル環境にダウンロードしてください。
 
 ```bash
 リポジトリをクローン
@@ -24,7 +24,7 @@ cd robosys2024
 
 実行例
 ```
-$ seq 3 | ./Potter_Simulator
+$ seq 3 | ./potter_simulator
 ハリー・ポッター: ウィンガーディアム・レヴィオーサっっっっ
 ヴォルデモート: セクタムセンプラああああああ
 うぉおおおおおおおおお
@@ -32,7 +32,7 @@ $ seq 3 | ./Potter_Simulator
 ハリー 勝利
 ```
 ```
-$ ./Potter_Simulator
+$ ./potter_simulator
 $ 5
 $ 3
 $ 6.2
